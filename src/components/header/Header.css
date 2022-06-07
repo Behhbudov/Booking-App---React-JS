@@ -1,0 +1,125 @@
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #003580;
+    color: #fff;
+}
+.headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0 100px 0;
+}
+.headerContainer.listMode { margin: 20px 0 0 0; }
+.headerList {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.headerListItem {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.headerListItem.active {
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: rgba(0,113,194,0.24);
+}
+.headerListItem:hover {
+    border-radius: 20px;
+    background-color: rgba(0,113,194,0.24);
+}
+.headerTitle { font-size: 3em; }
+.headerDesc {
+    font-size: 1.5em;
+    margin: 7px 0 30px 0;
+}
+.headerBtn {
+    background-color: #0071c2;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+.headerBtn:hover { background-color: #00487a; }
+.headerSearch {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    max-width: 1024px;
+    height: 30px;
+    background-color: #fff;
+    border: 3px solid #febb02;
+    padding: 10px 0;
+    border-radius: 5px;
+    bottom: -25px;
+}
+.headerIcon {
+    color: lightgray;
+}
+.headerSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.headerSearchInput {
+    border: none;
+    outline: none;
+}
+.headerSearchText {
+    color: #808080;
+    cursor: pointer;
+}
+.date {
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+}
+.options {
+    position: absolute;
+    top: 50px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+.optionItem {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 15px;
+}
+.optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+}
+.optionCounterButton {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #0071c2;
+    border-radius: 2px;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: #fff;
+}
+.optionCounterButton:hover {
+    background-color: rgba(151, 199, 233, 0.164);
+}
+.optionCounterButton:active {
+    outline: 3px solid rgba(9, 76, 124, 0.164);
+    border-radius: 2px;
+}
+.optionCounterButton:disabled { cursor: not-allowed; }
